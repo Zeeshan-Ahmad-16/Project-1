@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gold's Gym - Home</title>
-    <link rel="stylesheet" href="home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Gold's Gym</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <header>
-        <div class="logo">GOLD'S <span>GYM</span></div>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="facilities.html">Facilities</a>
-            <a href="join.html">Join</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-gold">GOLD'S</span> GYM</a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="join.html">Join</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <span class="eyebrow">Est. 1965 / Built for more</span>
-                <h1>Gold's Gym.<br>Stronger every day.</h1>
-                <p>We are a training community built around expert coaching, considered spaces, and steady progress.</p>
-                <div class="hero-buttons">
-                    <a href="join.html" class="btn btn-primary">Join now</a>
-                    <a href="services.html" class="btn btn-secondary">View classes</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <!-- Placeholder for images/hero.jpg -->
-                <div class="placeholder-box"><img sec="hero.jpg" alt="Logo"></div>
-            </div>
-        </section>
-
-        <section class="quick-links">
-            <h2>Explore Gold's Gym</h2>
-            <div class="tiles">
-                <a href="facilities.html" class="tile">Facilities</a>
-                <a href="join.html" class="tile">Join</a>
-                <a href="services.html" class="tile">Services</a>
-                <a href="gallery.html" class="tile">Gallery</a>
-                <a href="contact.html" class="tile">Contact</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Gold's Gym. All rights reserved.</p>
-        <div class="socials">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">YouTube</a>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Est. 1965 / Built for more</p>
+        <h1>Gold's Gym. Stronger every day.</h1>
+        <p class="hero-lead">Expert coaching, serious equipment and a community that pushes you further, whatever your starting point.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-gold" href="join.html">Join now</a>
+          <a class="btn btn-outline" href="services.html">View classes</a>
         </div>
-    </footer>
+      </div>
+      <img id="hero-photo" src="images/hero.jpg" alt="Gold's Gym">
+    </section>
+    <section class="intro">
+      <h2>Train where champions started</h2>
+      <p>We are a training community built around expert coaching, considered spaces and steady progress.</p>
+      <p>From first-timers to competitive lifters, every member gets a plan, a trainer and room to grow.</p>
+    </section>
+    <section class="tiles" aria-label="Explore the site">
+      <a class="tile" href="facilities.html">Facilities</a>
+      <a class="tile" href="join.html">Join</a>
+      <a class="tile" href="services.html">Services</a>
+      <a class="tile" href="gallery.html">Gallery</a>
+      <a class="tile" href="contact.html">Contact</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Gold's Gym. All rights reserved.</p>
+    <p class="social"><a href="https://instagram.com">Instagram</a> <a href="https://facebook.com">Facebook</a> <a href="https://youtube.com">YouTube</a></p>
+  </footer>
 </body>
 </html>
