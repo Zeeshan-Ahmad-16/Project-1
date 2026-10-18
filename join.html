@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join | Gold's Gym</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="join.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-gold">GOLD'S</span> GYM</a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="join.html" class="active">Join</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <p class="eyebrow">Gold's Gym / Membership</p>
+      <h1>Join the gym</h1>
+      <p>Fill in the form and we will have your membership ready for your first visit.</p>
+    </section>
+    <form class="join-form" action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>1. Personal details</legend>
+        <label>Full name <input type="text" name="fullname" placeholder=" " required minlength="3" maxlength="50"></label>
+        <label>Email <input type="email" name="email" required placeholder=" "></label>
+        <label>Password <input type="password" name="password" placeholder=" " required minlength="8" maxlength="30"></label>
+        <label>Confirm Password <input type="password" name="password" placeholder=" " required minlength="8" maxlength="30"></label>
+        <label>Date of birth <input type="date" name="dob" required max="2010-12-31"></label>
+        <label>Age <input type="number" name="age" min="16" max="80" required></label>
+        <label>Social profile link <input type="url" name="social" placeholder="https://"></label>
+        <label>Member ID <input type="text" name="memberid" value="GG-0001" readonly></label>
+        <label>Branch <input type="text" name="branch" value="Main branch" disabled></label>
+      </fieldset>
+      <fieldset>
+        <legend>2. Training preferences</legend>
+        <label>Preferred time <input type="time" name="time" required></label>
+        <label>Training type
+          <select name="training">
+            <option value="strength" selected>Strength training</option>
+            <option value="cardio">Cardio</option>
+            <option value="yoga">Yoga</option>
+            <option value="personal">Personal training</option>
+          </select>
+        </label>
+        <div class="radio-group">
+          <span>Membership type</span>
+          <label><input type="radio" name="plan" value="monthly" checked> Monthly</label>
+          <label><input type="radio" name="plan" value="yearly"> Yearly</label>
+        </div>
+        <label>Profile photo <input type="file" name="photo" accept="image/*"></label>
+      </fieldset>
+      <fieldset>
+        <legend>3. Final details</legend>
+        <label>Message or notes <textarea name="notes" rows="4" maxlength="300"></textarea></label>
+        <label class="check"><input type="checkbox" name="terms" required> I agree to the terms and conditions</label>
+        <button type="submit">Submit application</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Gold's Gym. All rights reserved.</p>
+    <p class="social"><a href="https://instagram.com">Instagram</a> <a href="https://facebook.com">Facebook</a> <a href="https://youtube.com">YouTube</a></p>
+  </footer>
+</body>
+</html>
